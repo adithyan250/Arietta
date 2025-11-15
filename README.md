@@ -20,6 +20,10 @@ If you are developing a production application, we recommend using TypeScript wi
 Add database;
 modify src/assets/assets.js
 currency and delivery fee config - src/context/shopcontext
+contact number on footer
+
 
 
 1:43:54
+2:30:33
+
