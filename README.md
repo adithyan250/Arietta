@@ -22,6 +22,8 @@ modify src/assets/assets.js
 currency and delivery fee config - src/context/shopcontext
 contact number on footer
 
+product.jsx => state for size to color, button
+
 
 
 1:43:54
