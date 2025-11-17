@@ -23,6 +23,7 @@ currency and delivery fee config - src/context/shopcontext
 contact number on footer
 
 product.jsx => state for size to color, button
+shopcontext => size to color
 
 
 
