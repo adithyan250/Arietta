@@ -25,6 +25,11 @@ contact number on footer
 product.jsx => state for size to color, button
 shopcontext => size to color
 
+aboutus image need to change;
+
+
+
+<!-- login, signup, checkout, orders, aboutus, contact, -->
 
 
 1:43:54
