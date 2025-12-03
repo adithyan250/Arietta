@@ -46,10 +46,6 @@ const ShopContextProvider = (props) => {
 
             let cartData = safeClone(cartItems ?? {});
             // structuredClone(cartItems);
-            console.log("cartItmes:", cartItems);
-            console.log(cartData);
-
-
             if (cartData[itemId]) {
                 if (cartData[itemId][color]) {
                     cartData[itemId][color] += 1;
@@ -66,8 +62,6 @@ const ShopContextProvider = (props) => {
             if (token) {
                 try {
                     const response = await axios.post(backendUrl + '/api/cart/add', { itemId, color }, { headers: { token } })
-                    console.log(response.data);
-
                 } catch (error) {
                     console.log(error);
                     toast.error(error.message);
@@ -148,8 +142,6 @@ const ShopContextProvider = (props) => {
 
             if (response.data.success) {
                 setCartItems(response.data.cartData)
-                console.log("respons:", response.data);
-
             }
         } catch (error) {
             console.log(error);
@@ -177,6 +169,7 @@ const ShopContextProvider = (props) => {
         showSearch,
         setShowSearch,
         cartItems,
+        setCartItems,
         addToCart,
         getCartCount,
         updateQuantity,
